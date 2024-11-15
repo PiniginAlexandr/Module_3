@@ -16,11 +16,9 @@ def is_contains(string, list_to_search):
     poz = True
     for i in list_to_search:
         if string.lower() == i.lower():
-            poz = True
-        else:
-            poz = False
+            return  True
+    return False
 
-    return poz
 
 
 print(string_info('Capybara'))
